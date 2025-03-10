@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+    
+</head>
+<body class="relative z-[0]">
+    <div class="h-auto mb-10">
+        <div class="flex hidden lg:flex  justify-around lg:justify-between px-4 py-3 bg-blue-900 w-full">
+            <div class="flex ">
+                <div class="w-10 h-10 ml-14 mx-auto  text-white mr-2 border border-white rounded-full flex justify-center items-center
+                hover:bg-white hover:text-gray-900 cursor-pointer">
+                    <i class="fa-brands fa-twitter text-sm "></i>
+                </div>
+                <div class="w-10 h-10 ml-0 mx-auto  text-white mr-2 border border-white rounded-full flex justify-center items-center
+                hover:bg-white hover:text-gray-900 cursor-pointer">
+                     <i class="fa-brands fa-facebook-f text-sm"></i>
+                </div>
+                <div class="w-10 h-10 ml-0 mx-auto  text-white mr-2 border border-white rounded-full flex justify-center items-center
+                hover:bg-white hover:text-gray-900 cursor-pointer">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </div>
+                <div class="w-10 h-10 ml-0 mx-auto  text-white mr-2 border border-white rounded-full flex justify-center items-center
+                hover:bg-white hover:text-gray-900 cursor-pointer">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                </div>
+                <div class="w-10 h-10 ml-0 mx-auto  text-white mr-2 border border-white rounded-full flex justify-center items-center
+                hover:bg-white hover:text-gray-900 cursor-pointer">
+                    <i class="fa-brands fa-youtube text-sm"></i>
+                </div>
+            </div>
+            <div class="flex mr-10">
+                <div class=" text-white cursor-pointer flex justify-center items-center mr-3">
+                        <i class="fa-solid fa-user text-sm"></i>
+                    <h2 class="font-medium text-base ml-2">
+                        Register
+                    </h2>
+                </div>
+                <div class=" text-white cursor-pointer flex  justify-center items-center mr-3">
+                        <i class="fa-solid fa-right-to-bracket text-sm"></i>
+                    <h2 class="font-medium text-base ml-2">
+                        Login
+                    </h2>
+                </div>
+                <div class=" z-[100] relative text-white cursor-pointer flex justify-center items-center  mr-3 group">
+                        <i class="fa-solid  fa-house text-sm"></i>
+                    <h2 class="arrow font-medium text-base ml-2 
+                    relative after:content-[''] after:absolute after:right-[-10px] after:top-1/2 after:-translate-y-1/2
+                     after:border-4 after:border-l-transparent after:border-r-transparent after:border-b-transparent
+                     ">
+                        My Dashboard
+                    </h2>
+                    <ul class="bg-white w-[20vh] absolute text-gray-800 left--1 top-full rounded-lg  shadow-lgs
+                    invisible group-hover:visible">
+                        <li class="text-gray-600 flex items-center w-full mt-2 p-1 pl-4 hover:bg-blue-900 hover:text-white">
+                            <i class="fa-solid fa-user text-base"></i>
+                            <h2 class="font-medium text-1xl ml-2">
+                                My Profile
+                            </h2>
+                        </li>
+                        <li class="text-gray-600 flex items-center w-full mt-2 p-1 pl-4 hover:bg-blue-900 hover:text-white">
+                                <i class="fa-solid fa-message text-base"></i>
+                            <h2 class="font-medium text-1xl ml-2">
+                                Inbox
+                            </h2>
+                        </li>
+                        <li class="text-gray-600 flex items-center w-full mt-2 p-1 pl-4 hover:bg-blue-900 hover:text-white">
+                                <i class="fa-solid fa-bell text-base"></i>
+                            <h2 class="font-medium text-1xl ml-2">
+                                Notfication
+                            </h2>
+                        </li>
+                        <li class="text-gray-600 flex items-center w-full mt-2 p-1 pl-4 hover:bg-blue-900 hover:text-white">
+                                <i class="fa-solid fa-gear text-base"></i>
+                            <h2 class="font-medium text-1xl ml-2">
+                                Account Setting
+                            </h2>
+                        </li>
+                        <li class="text-gray-600 flex items-center w-full mt-2 p-1 pl-4 mb-2  hover:bg-blue-900 hover:text-white">
+                                <i class="fa-solid fa-power-off text-base"></i>
+                            <h2 class="font-medium text-1xl ml-2">
+                                Log Out
+                            </h2>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class=" bg-[linear-gradient(rgba(37,37,37,30%),rgba(0,0,0,80%)),url(./img/carousel-3.jpg)] bg-cover sm:h-[80vh] h-[95vh] lg:h-[90vh] bd-no-repeat relative z-[10]">
+            <div class="relative mx-auto flex  justify-between items-center bg-white lg:bg-transparent relative  w-full
+             border-b-1 border-b-gray-300 ">
+                <div class=" ml-[10%] lg:ml-[6%] flex items-center  text-blue-900 lg:text-white">
+                    <i  class="fa-solid fa-location-dot text-4xl"></i>
+                    <a href="" class=" ml-3 text-4xl font-medium">Travela</a>
+                </div>
+                <div class="mine-nav cursor-pointer flex lg:hidden z-0 mr-[10%]">
+                    <div class="border border-gray-600 py-2 px-4 rounded-lg mt-2 mb-3">
+                        <i id="menu-toggle" class="fa-solid fa-bars text-xl"></i>
+                    </div>
+                </div>
+                <div id="mobile-menu" class=" lg:hidden  z-10 top-[99%] w-full pl-[10%] absolute 
+                bg-white border border-gray-300
+                opacity-0 translate-y-[-10px] transition-all duration-500 ease-in-out pointer-events-none">
+                    <ul class="">
+                        <li class="px-2 pt-2 pb-2  ">
+                            <a href="" class="text-gray-600 font-medium text-xl">
+                                Home
+                            </a>
+                        </li>
+                        <li class="px-2 pt-2 pb-2  ">
+                            <a href="" class="text-gray-600 font-medium text-xl">
+                                About
+                            </a>
+                        </li>
+                        <li class="px-2 pt-2 pb-2  ">
+                            <a href="" class="text-gray-600 font-medium text-xl">
+                                Services
+                            </a>
+                        </li>
+                        <li class="px-2 pt-2 pb-2  ">
+                            <a href="" class="text-gray-600 font-medium text-xl">
+                                Blog
+                            </a>
+                        </li>
+                        <li  class="px-2 pt-2 pb-2 group hover text-gray-600 ">
+                            <a href="" class="text-gray-600 font-medium text-xl group">
+                                Pages
+                            </a>
+                            <i id="sm-toggle" class="fa-solid fa-angle-down cursor-pointer ml-1"></i>
+                            <ul id="pages-menu" class="border hidden  border-gray-300 px-2 py-4 rounded-lg mt-2 mx-4">
+                                <li class="text-gray-600 font-medium pb-2 ml-2 ">
+                                    Destination
+                                </li>
+                                <li class="text-gray-600 font-medium pb-2 ml-2 ">
+                                    Explore Tour
+                                </li>
+                                <li class="text-gray-600 font-medium pb-2 ml-2 ">
+                                    Travel Booking
+                                </li>
+                                <li class="text-gray-600 font-medium pb-2 ml-2 ">
+                                    Our Gallery
+                                </li>
+                                <li class="text-gray-600 font-medium pb-2 ml-2 ">
+                                    Travel Guides
+                                </li>
+                                <li class="text-gray-600 font-medium pb-2 ml-2 ">
+                                    Testimonial
+                                </li>
+                                <li class="text-gray-600 font-medium ml-2 ">
+                                    404 Page
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="px-2 pt-2 pb-2  ">
+                            <a href="" class="text-gray-600 font-medium text-xl">
+                                Contact
+                            </a>
+                        </li>
+                        <a href="" class="w-[20%] h-10 order border border-blue-900  flex items-center 
+                        ml-2 px-3 text-white font-medium rounded-full justify-center mb-4
+                         bg-blue-900  font-medium hover:bg-white hover:text-blue-900 transition-transform ease-in-out duration-300
+                        ">Book Now</a>
+                    </ul>
+                </div>
+                <div class="links hidden lg:block z-[100]  mr-10 overflow:block">
+                    <ul class="flex items-center h-21  ">
+                        <li class="Active bg-blue-900 px-2 pt-8 pb-7  ">
+                            <a href="" class="text-white font-medium text-xl">
+                                Home
+                            </a>
+                        </li>
+                        <li class="px-2 pt-8 pb-7 relative before:content-['']  before:inset-0 before:absolute
+                            before:w-full before:h-full  before:-translate-y-[-100%]
+                            truncate before:transition-transform before:duration-300 
+                            before:z-[-1] before:bg-blue-900 hover:before:-translate-y-[0] cursor-pointer">
+                           
+                            <a href="" class="text-white  font-medium text-xl">
+                                About
+                            </a>
+                        </li>
+                        <li class="px-2 pt-8 pb-7 relative before:content-['']  before:inset-0 before:absolute
+                        before:w-full before:h-full  before:-translate-y-[-100%]
+                        truncate before:transition-transform before:duration-300 
+                        before:z-[-1] before:bg-blue-900 hover:before:-translate-y-[0] cursor-pointer ">
+                            <a href="" class="text-white font-medium text-xl">
+                                Services
+                            </a>
+                        </li>
+                        <div>
+                            
+                        </div>
+                        <li class="px-2 pt-8 pb-7 relative before:content-['']  before:inset-0 before:absolute
+                        before:w-full before:h-full  before:-translate-y-[-100%]
+                        truncate before:transition-transform before:duration-300 
+                        before:z-[-1] before:bg-blue-900 hover:before:-translate-y-[0] cursor-pointer">
+                            <a href="" class="text-white font-medium text-xl ">
+                                Packages
+                            </a>
+                            
+                        </li>
+                        
+                        <li class="px-2 pt-8 pb-7 relative before:content-['']  before:inset-0 before:absolute
+                        before:w-full before:h-full  before:-translate-y-[-100%]
+                        truncate before:transition-transform before:duration-300 
+                        before:z-[-1] before:bg-blue-900 hover:before:-translate-y-[0] cursor-pointer">
+                            <a href="" class="text-white font-medium text-xl">
+                                Blog
+                            </a>
+                        </li>
+                        <div>
+                            <div class="relative  group">
+                                <div class="px-2 pt-8 pb-7  before:content-['']  before:inset-0 before:absolute
+                                before:w-full before:h-full  before:-translate-y-[-100%]
+                                before:transition-transform before:duration-300 
+                                before:z-[-1] before:bg-blue-900 before:opacity-0  group-hover:visible group-hover:before:opacity-100
+                                hover:before:-translate-y-[0] cursor-pointer">
+                                <a href="" class="text-white font-medium text-xl ">
+                                    Pages
+                                    </a>
+                                <i class="fa-solid fa-angle-down text-white"></i>
+                                </div>
+                                <ul class="absolute block w-40 top-full left-[-6%] 
+                                    bg-white shadow-lg rounded-lg invisible opacity-0 group-hover:visible group-hover:opacity-100 ">
+                                        <li class=" mt-2 p-2 pl-4 hover:bg-blue-900 hover:text-white">
+                                            <a href="" class="">Distination</a>
+                                        </li>
+                                        <li class="p-2 pl-4 hover:bg-blue-900 hover:text-white">
+                                            <a href="" class="">Explore Tour</a>
+                                        </li>
+                                        <li class="p-2 pl-4 hover:bg-blue-900 hover:text-white">
+                                            <a href="" class="">Travel Booking</a>
+                                        </li>
+                                        <li class="p-2 pl-4 hover:bg-blue-900 hover:text-white">
+                                            <a href="" class="">Our Gallery</a>
+                                        </li>
+                                        <li class="p-2 pl-4 hover:bg-blue-900 hover:text-white">
+                                            <a href="" class="">Travel Guides</a>
+                                        </li>
+                                        <li class="p-2 pl-4 hover:bg-blue-900 hover:text-white">
+                                            <a href="" class="">Testimonial</a>
+                                        </li>
+                                        <li class="mb-2 p-2 pl-4 hover:bg-blue-900 hover:text-white">
+                                            <a href="" class="">404 page</a>
+                                        </li>   
+                                </ul>
+                            </div>
+                        
+                        </div>
+                        <li class="px-2 pt-8 pb-7 relative before:content-['']  before:inset-0 before:absolute
+                        before:w-full before:h-full  before:-translate-y-[-100%]
+                        truncate before:transition-transform before:duration-300 
+                        before:z-[-1] before:bg-blue-900 hover:before:-translate-y-[0] cursor-pointer">
+                            <a href="" class="text-white font-medium text-xl">
+                                Contact
+                            </a>
+                            
+                        </li>
+                        <a href="" class="w-30 h-10 order border border-blue-900  flex items-center 
+                        ml-2 px-3 text-white font-medium rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                         before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                         hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                         truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                         ease-in-out hover:duration-300">book Now</a>
+                    </ul>
+                    
+                </div> 
+            </div>
+            <div class="relative flex flex-wrap flex-col items-center justify-center text-center mr-4 ml-4 
+            mt-[15vh] sm:mt-[8vh] text-white">
+                <h3 class="mt-10 lg:text-3xl text-3xl font-bold">Explore The World</h3>
+                <h2 class="mt-5 lg:text-7xl text-5xl font-bold">You Like To Go?</h2>
+                <p class="mt-10 lg:text-xl text-sm lg:w-[55vh]  sm:w-[60vh] text-center font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                     <a href="" class="w-[20vh] h-[6vh] order border border-blue-900  flex items-center 
+                     mt-10 text-white font-medium rounded-full justify-center 
+                     before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                      before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                      hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                      truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                      ease-in-out hover:duration-300">Discover Now</a>
+                <div class="absolute lg:top-[135%] top-[63vh] mb-10 md:top-[55vh]  sm:top-[55vh] sm:w-[60%] md:w-[70%] lg:w-[90%]
+                  border-[40px] mx-9 rounded-full border-blue-900/80">
+                    <input type="text" placeholder="Eg: Thailand" class="w-full  bg-white px-6 py-4 text-gray-600
+                     rounded-full focus:outline-none">
+                     <div class="absolute top-[16%] right-[3%] lg:right-[1%]">
+                        <a href="" class="w-30 h-10  z-10 order border border-blue-900  flex items-center 
+                        ml-2 px-4 py-2 text-white font-medium rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                         before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                         hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                         truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                         ease-in-out hover:duration-300">Search</a> 
+                    </div> 
+                </div> 
+            </div>
+        </div>    
+    </div>
+    <div class="grid grid-cols-12 mx-20 my-[90px]  ">
+        <div class="lg:col-span-5 col-span-12 px-4 mt-10">
+            <div class="mt-10 w-90 h-90 border border-[50px] border-blue-900 border-t-transparent border-b-transparent">
+                <img src="./img/about-img.jpg" alt="error" class="w-[100%] h-[100%]">
+            </div>
+        </div>
+        <div class="lg:col-span-7 col-span-12 mt-20 px-4 bg-[linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)),url('./img/about-img-1.png')] " >
+            <h3 class="text-blue-900 font-medium text-2xl uppercase relative after:content-[''] 
+            after:absolute after:h-[3px] after:w-[50px] after:bg-blue-900 after:top-[50%] after:ml-[15px] mb-2"> About Us</h3>
+            <h1 class="text-gray-900 font-medium text-4xl mb-3">
+                Welcome to <span class="text-blue-900">Travela</span> 
+            </h1>
+            <p class="mt-8 text-gray-600 font-medium text-base ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Molestias, dolorum, doloribus sunt dicta, officia voluptatibus libero necessitatibus natus impedit quam ullam assumenda?
+                  Id atque iste consectetur. Commodi odit ab saepe!
+
+            </p>
+            <p class="mt-8 text-gray-600 font-medium text-base ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quos voluptatem suscipit neque enim, doloribus ipsum rem eos distinctio, dignissimos nisi saepe nulla? Libero numquam perferendis provident placeat molestiae quia?
+
+            </p>
+            <div class="grid grid-cols-7  my-5 ">
+                <div class="lg:col-span-4 md:col-span-4 col-span-7 ">
+                    <div class="text-gray-500 font-medium text-base">
+                        <i class="fa-solid fa-arrow-right text-blue-900"></i>
+                        First Class Flights
+                    </div>
+                    <div class="text-gray-500 font-medium text-base my-4">
+                        <i class="fa-solid fa-arrow-right text-blue-900"></i>
+                        5 Star Accommodations
+                    </div>
+                    <div class="text-gray-500 font-medium text-base">
+                        <i class="fa-solid fa-arrow-right text-blue-900"></i>
+                        150 Premium City Tours
+                    </div>
+                </div>
+                <div class="lg:col-span-3 md:col-span-3 col-span-7">
+                    <div class="text-gray-500 lg:mt-0 md:mt-0 mt-4 font-medium text-base">
+                        <i class="fa-solid fa-arrow-right text-blue-900"></i>
+                        Handpicked Hotels
+                    </div>
+                    <div class="text-gray-500 font-medium text-base my-4">
+                        <i class="fa-solid fa-arrow-right text-blue-900"></i>
+                        Latest Model Vehicles
+                    </div>
+                    <div class="text-gray-500 font-medium text-base">
+                        <i class="fa-solid fa-arrow-right text-blue-900"></i>
+                        24/7 Service
+                    </div>
+                </div>
+            </div>
+            <a href="" class="w-[30%] h-[10%]  z-10 order border border-blue-900  flex items-center 
+                        ml-2 px-4 py-2 text-white font-medium rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                         before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                         hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                         truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                         ease-in-out hover:duration-300">Read More</a> 
+        </div>
+    </div>
+    <div class="bg-gray-200 py-8 px-4 items-center justify-center text-center">
+        <div class="py-4 px-2 my-10 flex flex-col ">
+            <div class="text-center mx-auto ">
+                <h3 class="text-blue-900 text-2xl font-medium uppercase px-3 mb-2 relative before:content-[''] before:absolute 
+                before:w-[50px] before:h-[2px] before:bg-blue-900 before:top-[50%] before:left-[100%] 
+                after:content-[''] after:absolute 
+                after:w-[50px] after:h-[2px] after:bg-blue-900 after:top-[50%] after:right-[100%] 
+                inline-block">Searvices</h3>
+                <h1 class="text-gray-900 text-4xl font-medium mb-5">Our Services</h1>
+            </div>
+            <div class="grid grid-cols-12 mx-20">
+                <div class="col-span-12 lg:col-span-6 px-2">
+                    <div class="flex items-center bg-white border border-blue-900 mb-5 rounded-lg text-white group hover:bg-blue-900 ">
+                        <div class="p-[1.5rem] pr-0">
+                            <h3 class="font-medium text-2xl group-hover:text-white  text-gray-900 mb-5 text-end">
+                                WorldWide Tours
+                            </h3>
+                            <p class="text-gray-500 text-end group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>
+                        <div class="p-[1.5rem]">
+                            <i class="fa-solid fa-globe text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-white border border-blue-900 rounded-lg mb-5 group hover:bg-blue-900">
+                        <div class="p-[1.5rem] pr-0 ">
+                            <h3 class="font-medium text-2xl text-gray-900 mb-5 text-end group-hover:text-white">
+                                Hotel Reservation
+                            </h3>
+                            <p class="text-gray-500 text-end group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>
+                        <div class="p-[1.5rem]">
+                            <i class="fa-solid fa-hotel text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-white border mb-5 border-blue-900 rounded-lg group hover:bg-blue-900 ">
+                        <div class="p-[1.5rem] pr-0 ">
+                            <h3 class="font-medium text-2xl text-gray-900 mb-5 text-end group-hover:text-white">
+                                Travel Guides
+                            </h3>
+                            <p class="text-gray-500 text-end group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>
+                        <div class="p-[1.5rem] ">
+                            <i class="fa-solid fa-user text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-white border border-blue-900 mb-5 rounded-lg group hover:bg-blue-900 ">
+                        <div class="p-[1.5rem] pr-0 ">
+                            <h3 class="font-medium text-2xl text-gray-900 mb-5  text-end group-hover:text-white">
+                                Event Management
+                            </h3>
+                            <p class="text-gray-500  text-end group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>
+                        <div class="p-[1.5rem] ">
+                            <i class="fa-solid fa-gear text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-12 lg:col-span-6 px-2 lg:mt-0 mt-5">
+                    <div class="flex items-center bg-white border border-blue-900 mb-5 rounded-lg text-white group hover:bg-blue-900 ">
+                        <div class="p-[1.5rem]">
+                            <i class="fa-solid fa-globe text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                        <div class="p-[1.5rem] pl-0">
+                            <h3 class="font-medium text-2xl group-hover:text-white text-gray-900 mb-5 ">
+                                WorldWide Tours
+                            </h3>
+                            <p class="text-gray-500  group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="flex items-center bg-white border border-blue-900 rounded-lg mb-5 group hover:bg-blue-900">
+                        <div class="p-[1.5rem]">
+                            <i class="fa-solid fa-hotel text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                        <div class="p-[1.5rem] pl-0 ">
+                            <h3 class="font-medium text-2xl text-gray-900 mb-5  group-hover:text-white">
+                                Hotel Reservation
+                            </h3>
+                            <p class="text-gray-500  group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="flex items-center bg-white mb-5 border border-blue-900 rounded-lg group hover:bg-blue-900 ">
+                        <div class="p-[1.5rem] ">
+                            <i class="fa-solid fa-user text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                        <div class="p-[1.5rem] pl-0 ">
+                            <h3 class="font-medium text-2xl text-gray-900 mb-5  group-hover:text-white">
+                                Travel Guides
+                            </h3>
+                            <p class="text-gray-500  group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-white border border-blue-900 mb-5 rounded-lg group hover:bg-blue-900 ">
+                        <div class="p-[1.5rem] ">
+                            <i class="fa-solid fa-gear text-[60px] text-blue-900 group-hover:text-white"></i>
+                        </div>
+                        <div class="p-[1.5rem] pl-0 ">
+                            <h3 class="font-medium text-2xl text-gray-900 mb-5  group-hover:text-white">
+                                Event Management
+                            </h3>
+                            <p class="text-gray-500  group-hover:text-white">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" lg:mx-[42%] mx-[40%] mt-3">
+                <a href="" class="w-[100%] z-10 order border border-blue-900  flex items-center 
+                         px-4 py-4 text-white font-bold rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                         before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                         hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                         truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                         ease-in-out hover:duration-300">Service More</a> 
+            </div>
+        </div>
+    </div>
+    <div class="bg-white py-8 px-4 items-center justify-center text-center">
+        <div class="py-4 px-2 my-10 flex flex-col ">
+            <div class="text-center  mx-auto ">
+                <h3 class="text-blue-900 text-2xl font-medium uppercase px-3 mb-2 relative before:content-[''] before:absolute 
+                before:w-[50px] before:h-[2px] before:bg-blue-900 before:top-[50%] before:left-[100%] 
+                after:content-[''] after:absolute 
+                after:w-[50px] after:h-[2px] after:bg-blue-900 after:top-[50%] after:right-[100%] 
+                inline-block">Destination</h3>
+                <h1 class="text-gray-900 text-4xl font-medium mb-5">Popular Destination</h1>
+            </div>
+            <ul class="mt-5 mx-auto flex flex-row flex-wrap justify-center
+            ">
+                <li class="w-[18vh] h-[50px] m-4 bg-blue-900 flex justify-center items-center text-center rounded-full
+                cursor-pointer ">
+                    <a href="" class="text-white font-medium text-1xl">All</a>
+                </li>
+                <li class="w-[18vh] h-[50px] m-4 border border-blue-900 bg-gray-200 flex justify-center items-center text-center rounded-full
+                group cursor-pointer hover:bg-blue-900 transition-colors duration-500 ease-in-out">
+                    <a href="" class="text-gray-900  font-medium text-1xl uppercase   group-hover:text-white">Usa</a>
+                </li>
+                <li class="w-[18vh] h-[50px] m-4 border border-blue-900 bg-gray-200 flex justify-center items-center text-center rounded-full
+                group cursor-pointer hover:bg-blue-900 transition-colors duration-500 ease-in-out">
+                    <a href="" class="text-gray-900 font-medium text-1xl group-hover:text-white">Canada</a>
+                </li>
+                <li class="w-[18vh] h-[50px] m-4 border border-blue-900 bg-gray-200 flex justify-center items-center text-center rounded-full
+                group cursor-pointer hover:bg-blue-900 transition-colors duration-500 ease-in-out">
+                    <a href="" class="text-gray-900 font-medium text-1xl group-hover:text-white">Europe</a>
+                </li>
+                <li class="w-[18vh] h-[50px] m-4 border border-blue-900 bg-gray-200 flex justify-center items-center text-center rounded-full
+                group cursor-pointer hover:bg-blue-900 transition-colors duration-500 ease-in-out">
+                    <a href="" class="text-gray-900 font-medium text-1xl group-hover:text-white">China</a>
+                </li>
+                <li class="w-[18vh] h-[50px] m-4 border border-blue-900 bg-gray-200 flex justify-center items-center text-center rounded-full
+                group cursor-pointer hover:bg-blue-900 transition-colors duration-500 ease-in-out">
+                    <a href="" class="text-gray-900 font-medium text-1xl group-hover:text-white">Singapora</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-5 relative mx-20 grid grid-cols-12 ">
+            <div class="lg:col-span-8 col-span-12 flex flex-col">
+                <div class="row grid grid-cols-12 ">
+                    <div class="lg:col-span-6  col-span-12 p-2">
+                        <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+                        <img src="./img/destination-1.jpg" alt="error" class="rounded-lg w-full  transition-transform group-hover:scale-110 duration-500 ease-in-out 
+                        ">
+                        <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+                            <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+                        px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                        before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+                        hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                        truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+                        ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+                        </div>
+                        <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+                        <div class="absolute lg:top-[50%] top-[75%] left-[30px] flex justify-center flex-col items-center translate-y-[130%] group-hover:translate-y-[0] 
+                        transition-transform duration-500 ease-in-out ">
+                            <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                                px-4 py-4 text-white font-bold rounded-full justify-center 
+                                before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                                before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                                hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                                truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                                ease-in-out hover:duration-300">20 Photos</a>
+                                <h2 class="mt-2 text-white font-medium text-2xl">New York City</h2>
+                                <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+                        </div>
+                    </div>
+                </div>
+                    <div class="lg:col-span-6  col-span-12 p-2">
+                        <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+                        <img src="./img/destination-2.jpg" alt="error" class="rounded-lg w-full transition-transform group-hover:scale-110 duration-500 ease-in-out 
+                        ">
+                        <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+                            <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+                        px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                        before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+                        hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                        truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+                        ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+                        </div>
+                        <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+                        <div class="absolute lg:top-[50%] top-[75%] left-[30px] flex justify-center flex-col items-center translate-y-[130%] group-hover:translate-y-[0] 
+                        transition-transform duration-500 ease-in-out ">
+                            <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                                px-4 py-4 text-white font-bold rounded-full justify-center 
+                                before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                                before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                                hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                                truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                                ease-in-out hover:duration-300">20 Photos</a>
+                                <h2 class="mt-2 text-white font-medium text-2xl">Las Vegas</h2>
+                                <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+                        </div>
+                    </div>
+                 </div>
+                    <div class="lg:col-span-6  col-span-12 p-2">
+                        <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+                        <img src="./img/destination-8.jpg" alt="error" class="rounded-lg w-full transition-transform group-hover:scale-110 duration-500 ease-in-out 
+                        ">
+                        <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+                            <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+                        px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                        before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+                        hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                        truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+                        ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+                        </div>
+                        <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+                        <div class="absolute lg:top-[50%] top-[75%] left-[30px] flex justify-center flex-col items-center translate-y-[130%] group-hover:translate-y-[0] 
+                        transition-transform duration-500 ease-in-out ">
+                            <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                                px-4 py-4 text-white font-bold rounded-full justify-center 
+                                before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                                before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                                hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                                truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                                ease-in-out hover:duration-300">20 Photos</a>
+                                <h2 class="mt-2 text-white font-medium text-2xl">Las Angelas</h2>
+                                <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6  col-span-12 p-2">
+                    <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+                    <img src="./img/destination-7.jpg" alt="error" class="rounded-lg w-full transition-transform group-hover:scale-110 duration-500 ease-in-out 
+                    ">
+                    <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+                        <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+                    px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+                    before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                    before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+                    hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                    truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+                    ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+                    </div>
+                    <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+                    <div class="absolute lg:top-[50%] top-[75%] left-[30px] flex justify-center flex-col items-center translate-y-[130%] group-hover:translate-y-[0] 
+                    transition-transform duration-500 ease-in-out ">
+                        <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                            px-4 py-4 text-white font-bold rounded-full justify-center 
+                            before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                            before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                            hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                            truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                            ease-in-out hover:duration-300">20 Photos</a>
+                            <h2 class="mt-2 text-white font-medium text-2xl">Las Angelas</h2>
+                            <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="lg:col-span-4 col-span-12 p-2">
+                    <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+                    <img src="./img/destination-9.jpg" alt="error" class="rounded-lg w-full lg:h-[57vh] transition-transform group-hover:scale-110 duration-500 ease-in-out 
+                    ">
+                    <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+                        <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+                    px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+                    before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                    before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+                    hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                    truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+                    ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+                    </div>
+                    <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+                    <div class="absolute lg:top-[73%] top-[88%] left-[30px] flex justify-center flex-col items-center  translate-y-[130%]
+                     group-hover:translate-y-[0] 
+                    transition-transform duration-500 ease-in-out ">
+                        <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                            px-4 py-4 text-white font-bold rounded-full justify-center 
+                            before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                            before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                            hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                            truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                            ease-in-out hover:duration-300">20 Photos</a>
+                            <h2 class="mt-2 text-white font-medium text-2xl">San francisco</h2>
+                            <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+                    </div>
+                </div>
+            </div> 
+            <div class="lg:col-span-4 col-span-12 p-2">
+                <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+                <img src="./img/destination-4.jpg" alt="error" class="rounded-lg w-full  transition-transform group-hover:scale-110 duration-500 ease-in-out 
+                ">
+                <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+                    <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+                px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+                before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+                hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+                ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+                </div>
+                <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+                <div class="absolute lg:top-[50%] top-[75%] left-[30px] flex justify-center flex-col items-center translate-y-[130%] group-hover:translate-y-[0] 
+                transition-transform duration-500 ease-in-out ">
+                    <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                        px-4 py-4 text-white font-bold rounded-full justify-center 
+                        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                        before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                        hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                        truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                        ease-in-out hover:duration-300">20 Photos</a>
+                        <h2 class="mt-2 text-white font-medium text-2xl">Las Angelas</h2>
+                        <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+                </div>
+            </div>
+        </div>
+        <div class="lg:col-span-4 col-span-12 p-2">
+            <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+            <img src="./img/destination-5.jpg" alt="error" class="rounded-lg w-full  transition-transform group-hover:scale-110 duration-500 ease-in-out 
+            ">
+            <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+                <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+            px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+            before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+            before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+            hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+            truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+            ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+            </div>
+            <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+            <div class="absolute lg:top-[50%] top-[75%] left-[30px] flex justify-center flex-col items-center translate-y-[130%] group-hover:translate-y-[0] 
+            transition-transform duration-500 ease-in-out ">
+                <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                    px-4 py-4 text-white font-bold rounded-full justify-center 
+                    before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                    before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                    hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                    truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                    ease-in-out hover:duration-300">20 Photos</a>
+                    <h2 class="mt-2 text-white font-medium text-2xl">Las Angelas</h2>
+                    <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+            </div>
+        </div>
+    </div>
+    <div class="lg:col-span-4 col-span-12 p-2">
+        <div class="relative  w-[100%] group rounded-lg overflow-hidden">
+        <img src="./img/destination-6.jpg" alt="error" class="rounded-lg w-full  transition-transform group-hover:scale-110 duration-500 ease-in-out 
+        ">
+        <div class="absolute top-[15px] right-[20px] hidden group-hover:flex duration-500 ease-in-out">
+            <a href="" class="w-[50px] h-[50px] z-10 order border border-white  flex items-center 
+        px-4 py-4 text-blue-900 font-bold rounded-full justify-center 
+        before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+        before:bg-white before:rounded-full before:z-[-1] before:translate-x-[0] 
+        hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+        truncate before:transition-transform before:duration-300  hover:bg-blue-900 hover:text-white 
+        ease-in-out hover:duration-300"><i class="fa-solid fa-plus p-0"></i></a> 
+        </div>
+        <span class="absolute inset-0 bg-blue-500 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></span>
+        <div class="absolute lg:top-[50%] top-[75%] left-[30px] flex justify-center flex-col items-center translate-y-[130%] group-hover:translate-y-[0] 
+        transition-transform duration-500 ease-in-out ">
+            <a href="" class="w-[110px] h-[40px] z-10 order border border-white justify-center text-center flex items-center 
+                px-4 py-4 text-white font-bold rounded-full justify-center 
+                before:content-[''] relative before:absolute before:inset-0 before:w-full before:h-full
+                before:bg-blue-900 before:rounded-full before:z-[-1] before:translate-x-[0] 
+                hover:before:translate-x-[100%] hover:before:opacity-[85%] 
+                truncate before:transition-transform before:duration-300  hover:bg-white hover:text-blue-900 
+                ease-in-out hover:duration-300">20 Photos</a>
+                <h2 class="mt-2 text-white font-medium text-2xl">Las Angelas</h2>
+                <a href="" class="text-base font-medium text-white mt-1 hover:text-blue-500">View All Place <i class="fa-solid fa-arrow-right ml-1"></i></a> 
+        </div>
+    </div>
+</div>                                                     
+</div>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+    
+            menu.classList.toggle('opacity-0');
+            menu.classList.toggle('translate-y-[-10px]');
+            menu.classList.toggle('opacity-100');
+            menu.classList.toggle('translate-y-0');
+            menu.classList.toggle('pointer-events-none');
+        });
+        
+        document.getElementById('sm-toggle').addEventListener('click', function() {
+            document.getElementById('pages-menu').classList.toggle('hidden');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
